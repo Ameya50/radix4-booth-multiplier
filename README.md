@@ -1,5 +1,7 @@
 # Radix-4 8-bit Booth Multiplier
 
+![Tool](https://img.shields.io/badge/Tool-Cadence%20Virtuoso-1a73e8) ![Technology](https://img.shields.io/badge/Technology-TSMC%20180nm-orange) ![Verification](https://img.shields.io/badge/Verification-DRC%2FLVS%20Clean-brightgreen)
+
 Full-custom, transistor-level design of a signed 8-bit Radix-4 Booth multiplier in **Cadence Virtuoso** (TSMC 180nm), taken from schematic through pre-layout simulation to DRC/LVS-clean physical layout.
 
 - **Course Project** — Digital IC Design (EE518), Dept. of EEE
