@@ -24,14 +24,16 @@ Design flow:
 
 | Folder | Contents |
 |---|---|
-| [`schematic_simulation/`](schematic_simulation) | Schematic-level design and pre-layout (ADE L) simulation waveforms: encoders, decoders, 2's-complement logic, ripple-carry adder stages, and full multiplier waveforms |
-| [`physical_layout/`](physical_layout) | Transistor-level layouts of standard cells (inverter, NAND, NOR, AND, OR, XOR, full adder) and composed blocks (encoder, decoder, adders, full multiplier), plus DRC and LVS result screenshots |
-| [`reports/`](reports) | Full lab reports: Booth algorithm theory, schematic design & simulation (`EE518_A5_254102404.pdf`) and physical layout with DRC/LVS sign-off (`EE518_Layout_254102404.pdf`) |
+| [`schematic/`](schematic) | Circuit schematics: standard cells, Booth encoder/decoder logic, ripple-carry and Kogge-Stone adders, 1's/2's-complement blocks, and the top-level normal vs. optimized (Radix-4 Booth) multiplier |
+| [`output_graph/`](output_graph) | Pre-layout (ADE L) transient simulation waveforms of the multiplier's output bus |
+| [`layout/`](layout) | Transistor-level layout screenshots of standard cells (inverter, NAND, NOR, AND, OR, full adder) and composed blocks (encoder, decoder, adders, full multiplier) |
+| [`lvs/`](lvs) | DRC and per-cell LVS verification screenshots ("CORRECT" comparison reports) for every cell and the full multiplier |
+| [`reports/`](reports) | Full lab reports: Booth algorithm theory with schematic design & simulation (`EE518_A5_254102404.pdf`), and physical layout with DRC/LVS sign-off (`EE518_Layout_254102404.pdf`) |
 
 ## Results
 
-- Functional correctness verified for signed multiplication across positive, negative, and boundary input combinations via pre-layout simulation.
-- Layout passed DRC (no design-rule violations) and LVS (layout matches schematic netlist) — see `physical_layout/drc.png` and `physical_layout/lvs.png`.
+- Functional correctness verified for signed multiplication across positive, negative, and boundary input combinations via pre-layout simulation — see [`output_graph/`](output_graph).
+- Layout passed DRC (no design-rule violations) and LVS (layout matches schematic netlist) for every standard cell and the composed multiplier — see [`lvs/`](lvs).
 
 ## Author
 
