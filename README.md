@@ -24,16 +24,16 @@ Design flow:
 
 | Folder | Contents |
 |---|---|
-| [`schematic/`](schematic) | Circuit schematics: standard cells, Booth encoder/decoder logic, ripple-carry and Kogge-Stone adders, 1's/2's-complement blocks, and the top-level normal vs. optimized (Radix-4 Booth) multiplier |
-| [`output_graph/`](output_graph) | Pre-layout (ADE L) transient simulation waveforms of the multiplier's output bus |
-| [`layout/`](layout) | Transistor-level layout screenshots of standard cells (inverter, NAND, NOR, AND, OR, full adder) and composed blocks (encoder, decoder, adders, full multiplier) |
-| [`lvs/`](lvs) | DRC and per-cell LVS verification screenshots ("CORRECT" comparison reports) for every cell and the full multiplier |
-| [`reports/`](reports) | Full lab reports: Booth algorithm theory with schematic design & simulation (`EE518_A5_254102404.pdf`), and physical layout with DRC/LVS sign-off (`EE518_Layout_254102404.pdf`) |
+| [`images/schematic/`](images/schematic) | Circuit schematics: standard cells, Booth encoder/decoder logic, ripple-carry and Kogge-Stone adders, 1's/2's-complement blocks, and the top-level normal vs. optimized (Radix-4 Booth) multiplier |
+| [`images/output_graph/`](images/output_graph) | Pre-layout (ADE L) transient simulation waveforms of the multiplier's output bus |
+| [`images/layout/`](images/layout) | Transistor-level layout screenshots of standard cells (inverter, NAND, NOR, AND, OR, full adder) and composed blocks (encoder, decoder, adders, full multiplier) |
+| [`images/lvs/`](images/lvs) | DRC and per-cell LVS verification screenshots ("CORRECT" comparison reports) for every cell and the full multiplier |
+| [`reports/`](reports) | Full lab report covering physical layout with DRC/LVS sign-off (`EE518_Layout_254102404.pdf`) |
 
 ## Results
 
-- Functional correctness verified for signed multiplication across positive, negative, and boundary input combinations via pre-layout simulation — see [`output_graph/`](output_graph).
-- Layout passed DRC (no design-rule violations) and LVS (layout matches schematic netlist) for every standard cell and the composed multiplier — see [`lvs/`](lvs).
+- Functional correctness verified for signed multiplication across positive, negative, and boundary input combinations via pre-layout simulation — see [`images/output_graph/`](images/output_graph).
+- Layout passed DRC (no design-rule violations) and LVS (layout matches schematic netlist) for every standard cell and the composed multiplier — see [`images/lvs/`](images/lvs).
 
 ## Author
 
